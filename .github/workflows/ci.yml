@@ -4,14 +4,10 @@ on: [push]
 
 jobs:
   build-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup PHP with PECL extension
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.0'
     - name: Cache Composer dependencies
       uses: actions/cache@v3
       with:
