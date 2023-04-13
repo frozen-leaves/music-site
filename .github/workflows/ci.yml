@@ -16,4 +16,7 @@ jobs:
         path: app/ config/ database/ tests/
         configuration: phpstan.neon
     - name: ECS
-      uses: zingimmick/ecs-action@0.0.6
+      uses: pietrzakadrian/easy-coding-standard-github-action@v2.0.3
+        with:
+          config: ecs.php
+          directories: app/ config/ routes/ tests/
