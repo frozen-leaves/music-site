@@ -2,5 +2,9 @@ grumphp:
     git_hook_variables:
         EXEC_GRUMPHP_COMMAND: sail php
     tasks: { 
-        phpstan: null 
+        phpstan: {
+            configuration: ./phpstan.neon,
+            memory_limit: "-1"
+        }
+            
     }
