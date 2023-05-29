@@ -1,6 +1,6 @@
 grumphp:
     git_hook_variables:
-        EXEC_GRUMPHP_COMMAND: sail php
+        EXEC_GRUMPHP_COMMAND: ./vendor/bin/sail php
     tasks: 
         phpstan:
             memory_limit: "-1"
